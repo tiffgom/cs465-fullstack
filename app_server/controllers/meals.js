@@ -1,6 +1,8 @@
 /* GET Meals View */
 const meals = (req, res) => {
-    pageTitle = process.env.npm_package_name + " - Meals"; // process.env.npm_package_description can only be accessed if you use 'npm start' *nodemon will not work
+  /*Access package using npm start. Also, packages for description and
+    author no longer work for npm version, therefore using package name. */
+    pageTitle = process.env.npm_package_name + " | Meals"; 
     res.render("meals", { title: pageTitle });
   };
   

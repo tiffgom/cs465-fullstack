@@ -4,7 +4,7 @@ const apiOptions = {
 };
 
 /* Render Travel List View */
-const renderTravelList = (rec, res, responseBody) => {
+const renderTravelList = (req, res, responseBody) => {
   let message = null;
   let pageTitle = process.env.npm_package_name + " | Travel";
 

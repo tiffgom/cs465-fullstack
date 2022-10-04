@@ -28,8 +28,8 @@ const tripsFindCode = async (req, res) => {
 
 const tripsUpdateTrip = async (req, res) => {
   console.log(req.body);
-  Trip.findOneAndUpdate(
-    { code: req.params.tripCode },
+  Model.findOneAndUpdate(
+    { 'code': req.params.tripCode },
     {
       code: req.body.code,
       name: req.body.name,

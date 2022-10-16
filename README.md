@@ -9,7 +9,12 @@ Both the Angular project and the Express HTML customer-facing pages adhere to th
 
 In the client-facing Express project, all data elements and other information are retrieved from the database and returned to the client-facing website, where the pages are generated. Handlebars are to improve the rendering speeds of the HTML pages.  Due the static nature of the client facing HTML pages, JavaScript is used to enable interaction with the backend database to make the pages dynamic reflect user behavior. 
 
-While the Express’ project’s structure features a lot of communication between the server and the client-side browser, the Angular instead moves a significant portion of the burden to the browser by initially loading the majority of what is required as a single-page application (SPA). With SPAs, data is presented to users dynamically. JavaScript operates within the browser, needing no page reloads or added wait time because content is automatically downloaded. As opposed to Express where every time a user accesses a new page in a simple web application interaction, a request is sent to the server to download a new HTML page
+While the Express’ project’s structure features a lot of communication between the server and the client-side browser, the Angular instead moves a significant portion of the burden to the browser by initially loading the majority of what is required as a single-page application (SPA). With SPAs, data is presented to users dynamically. JavaScript operates within the browser, needing no page reloads or added wait time because content is automatically downloaded. As opposed to Express where every time a user accesses a new page in a simple web application interaction, a request is sent to the server to download a new HTML page.
+
+As for the backend, MongoDB is our choice of a fast and scalable NoSQL database supports the various data types the site will need and will aid in delivering high performance and availability. MongoDB is its flexible data store because of its JSON-like document format. MongoDB stores records as documents (specifically BSON documents) gathered together in collections. Due to its horizontal scale-out architecture, the web application will have no trouble adjusting to user demands.
+
+
+
  
 ## Functionality
 

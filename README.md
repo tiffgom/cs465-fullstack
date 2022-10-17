@@ -1,5 +1,8 @@
 # CS-465 Full Stack Development with MEAN
 ## Travlr Getaways
+![Trips page](Screenshots/logo.png)
+
+
 <i> This is a data-driven, interactive web application developed using the MEAN stack. Users receive content directly from the server, and a Single Page Application (SPA) has developed for Travlr Getaways administrators to manage the application and database. The components of MEAN work cohesively as Express is designed to operate on top of Node.js, and AngularJS has a built-in connection to Node.js, allowing for fast data serving. Node.js includes an integrated web server, facilitating the deployment of the MongoDB database and application. </i>
 
 MEAN stack is ideal due to its architectural flexibility, allowing us to leverage Nodejs and Express' power, flexibility, and speed for the public-facing website, while leveraging SPA's efficiency for administrative purposes. Both ends are connected to a NoSQL MongoDB database, which gives us the freedom to define our schema and enforce certain parts without being constrained. 
@@ -21,7 +24,14 @@ An Instance in the full stack process where refactored code improved the functio
 ## Testing
 In a full stack application, the methods of the website are what drives the functionality and dynamics of a webpage allowing for a standardized approach to containing business logic in an API. The methods GET, POST, PUT, and DELETE are http requests that can be used to retrieve, create, retrieve, modify, or remove data from the database so that the functionality can be implemented. These are driven on the backend by using the functions of the database such as, create, findOne, and findOneAndUpdate, depending on a user’s behavior. Endpoints provide us with a url to access those methods, either publicly or privately with some sort of authentication, such as tokens or certificates. They produce outcomes reflected as codes that signify successful or failed requests (200, 201, 400), that may be tested using tools such as Postman. 
 
-The login security features make the site more secure because we safeguarded the user data kept in the browser using JWTs and hashes and salts to implement one-way password encryption. In the login process we created this week, after we registered a user and logged in, those credentials were verified by the server using the database and a JSON Web Token (JWT) was returned. The application decoded the JWT and changing the view to display the add tip and edit trip functionality when logged in and removing those features while logged out. Still only implementing authentication and authorization security features is not enough for the web application as it is not enough to prevent vulnerabilities that could be present in the site. For example, improper implementation of input validation and error handing could lead to SQL injection and other injection vulnerabilities as a result of poor input and output handling.
+The login security features make the site more secure because we safeguarded the user data kept in the browser using JWTs and hashes and salts to implement one-way password encryption. In the login process we created this week, after we registered a user and logged in, those credentials were verified by the server using the database and a JSON Web Token (JWT) was returned. 
+<img src="Screenshots/log-in_message.png" alt="login message" width="300"/>
+<img src="Screenshots/login_message.png" alt="login fields" width="300"/>
+
+The application decoded the JWT and changing the view to display the add tip and edit trip functionality when logged in and removing those features while logged out. Still only implementing authentication and authorization security features is not enough for the web application as it is not enough to prevent vulnerabilities that could be present in the site. For example, improper implementation of input validation and error handing could lead to SQL injection and other injection vulnerabilities as a result of poor input and output handling.
+
+![login message](Screenshots/Postman_login.jpg)
+![login fields](Screenshots/Postman_createTripWithJWT.jpg)
 
 ## Reflection
 Full stack development is a valuable skill in the technology sector because it requires developers to be proficient in both front-end and back-end programming. This course has increased my knowledge of client/server programming, REST APIs, and web application security and testing. I have knowledge of JavaScript frameworks applicable to the development of dynamic web apps and websites. This project has given me a competitive edge in the job market after graduation and the confidence to pursue further full stack development projects on my own.
